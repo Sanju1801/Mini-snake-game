@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+    background: linear-gradient(to bottom right, #0b8f79, #1cc5b1); /* Dark teal gradient background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#home {
+    background-color: rgb(8, 100, 130); /* Darker blue */
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+#home a {
+    color: white;
+    text-decoration: none;
+}
+
+#scoreBox {
+    background-color: rgb(8, 100, 130); /* Darker blue */
+    padding: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+    border-radius: 7px;
+}
+
+#hiscoreBox {
+    background-color: rgb(8, 100, 130); /* Darker blue */
+    padding: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+    border-radius: 7px;
+}
+
+#board {
+    background: linear-gradient(rgb(31, 128, 158), rgb(112, 209, 172)); /* Darker gradient */
+    width: 90vmin;
+    height: 90vmin;
+    border: 1px solid #333; /* Darker border color */
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    position: relative;
+}
+
+.head {
+    background: linear-gradient(rgb(142, 45, 192), rgb(216, 216, 129)); /* Darker gradient */
+    border: 2px solid rgb(20, 0, 20); /* Darker border color */
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake {
+    background-color: rgb(130, 0, 130); /* Darker purple */
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: rgb(200, 0, 0); /* Darker red */
+    border: .25vmin solid black;
+    transform: scale(.5);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (phones) */
+@media (max-width: 600px) {
+    .nav {
+        top: 10px;
+        right: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #home, #scoreBox, #hiscoreBox {
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    #board {
+        width: 85vmin;
+        height: 80vmin;
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav {
+        top: 10px;
+        right: 10px;
+    }
+
+    #home, #scoreBox, #hiscoreBox {
+        font-size: 20px;
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    #board {
+        width: 80vmin;
+        height: 80vmin;
+        position: inherit;
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1025px) {
+    .nav {
+        top: 20px;
+        right: 20px;
+    }
+
+    #home, #scoreBox, #hiscoreBox {
+        font-size: 24px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #board {
+        width: 90vmin;
+        height: 90vmin;
+    }
+}

@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #b2ebf2; /* Darker cyan background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #00251a; /* Darker greenish color for the heading */
+    text-align: center;
+    padding: 20px;
+    background-color: #80cbc4; /* Slightly darker cyan background for the heading */
+    margin: 0;
+}
+
+ol {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none; /* Remove default numbering */
+}
+
+ol li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e0f2f1; /* Slightly darker white background */
+    border-left: 5px solid #00332a; /* Darker green left border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Darker shadow effect */
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc; /* Default disc bullets */
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #e0f2f1; /* Slightly darker white background */
+    border-left: 3px solid #004d40; /* Darker green left border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Darker shadow effect */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00796b; /* Darker teal color for button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #004d40; /* Even darker teal color on hover */
+}
